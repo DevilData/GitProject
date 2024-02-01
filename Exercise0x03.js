@@ -49,5 +49,19 @@ let km =  cm / 100000
 //Number to Currency
 console.log("\n4.Currency Formatter")
 let  number = 1000
-let currencyFormatter = new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' })
-console.log(currencyFormatter.format(number))
+
+
+
+//Remove search str
+console.log("\n5 .Remove Search String")
+
+let str = `Hello World, this is a test for remove search string function`
+let  searchStr = `ell`
+if (str.includes(searchStr)){
+    let result = str.replace(searchStr,"");
+    console.log(result);
+}else{
+    console.log("String tidak ditemukan")
+}
+
+//Factorial Number
