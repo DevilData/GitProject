@@ -46,10 +46,8 @@ let cm = 100000
 let km =  cm / 100000
     console.log(`${cm} Centimeter samadengan  ${km} Kilometer`)
 
-//Number to Currency
-console.log("\n4.Currency Formatter")
-let  number = 1000
-
+//Write Code to format number as currency IDR
+console.log("\n4.Formatter Nominal sebagai Uang Indonesia")
 
 
 //Remove search str
