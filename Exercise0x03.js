@@ -48,7 +48,32 @@ let km =  cm / 100000
 
 //Write Code to format number as currency IDR
 console.log("\n4.Formatter Nominal sebagai Uang Indonesia")
+/*
 
+loop dari belakang
+    index dari 1, <-- start
+    ketemu per 3 angka, tambahkan titik
+*/
+
+let angkaStr = String(100000)
+let counter = 1
+let angkaReverse = ""
+let angkaIDR = ""
+
+for (let i = angkaStr.length-1; i >= 0;  i--){
+    if(counter % 3 === 0 && counter != angkaStr.length) {
+        angkaReverse += '.'+angkaStr[i]
+    } else {
+        angkaReverse += angkaStr[i]
+    }
+    counter++
+}
+
+for (let j = angkaReverse.length - 1; j >= 0; j--){
+    angkaIDR = angkaIDR + angkaReverse[j]
+}
+
+console.log("Nominal dalam Rupiah : ", angkaIDR);
 
 //Remove search str
 console.log("\n5 .Remove Search String")
@@ -62,4 +87,24 @@ if (str.includes(searchStr)){
     console.log("String tidak ditemukan")
 }
 
-//Factorial Number
+//Write code auto capitalize first letter each word in a string
+console.log("\n6.Auto Capitalize First Letter Each Word In A Sentence")
+let sentence = "this is a test for autocapitalize function";
+let words = sentence.split(' ');
+let capWords = words.map((word)=> {
+    return word.charAt(0).toUpperCase()+word.slice(1)
+}); 
+console.log(capWords.join(' '));
+
+
+//Code pembalik kalimat di string
+console.log("\n7.Palindrome Checker")
+
+let kata = "hello";
+let resKata = "";
+
+for (let i = kata.length-1; i >= 0; i--){
+    resKata = resKata + kata[i]
+}
+
+console.log(resKata)
