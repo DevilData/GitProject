@@ -2,15 +2,29 @@
 
 // Class Student
 
-function Student {
-    constructor(name, email, age, score) {
-        this.name = name
-        this.email = email;
-        this.age = age;
-        this.score = score;
- }
-
-let stu01 = new Student("Ahmde", "Ahmed@Ja.el",  23, 85);
-console.log(stu01);
-
-//Method Pertambahan
+let data = [
+{
+    nama: 'Andi',
+    email: 'andi@ja.el',
+    umur: 20,
+    nilai: 98,
+},
+{
+    nama: 'Pardi',
+    email: 'Pardi@ja.el',
+    umur: 20,
+    nilai: 98,
+},
+{
+    nama: 'Jali',
+    email: 'Jali@ja.el',
+    umur: 20,
+    nilai: 98,
+},
+{
+    nama: 'Dona',
+    email: 'donacat@ja.el',
+    umur: 20,
+    nilai: 98,
+}];
+console.log(data)
